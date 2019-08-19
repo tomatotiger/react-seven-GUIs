@@ -27,7 +27,7 @@ export class Counter extends React.Component<{}, State> {
   }
 }
 
-export const CounterWithHooks: React.FunctionComponent = () => {
+export function CounterWithHooks(): React.ReactElement {
   const [count, setCount] = React.useState<number>(0);
   return (
     <div>
@@ -36,4 +36,4 @@ export const CounterWithHooks: React.FunctionComponent = () => {
       <button onClick={() => setCount(prevCount => prevCount + 1)}> Count </button>
     </div>
   );
-};
+}

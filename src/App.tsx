@@ -1,7 +1,8 @@
 import * as React from 'react';
+import { hot } from 'react-hot-loader';
 import { Counter, CounterWithHooks } from './components/counter';
 
-export default function App() {
+function App() {
   return (
     <div>
       Hi!
@@ -10,3 +11,5 @@ export default function App() {
     </div>
   );
 }
+
+export default hot(module)(App);
