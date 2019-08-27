@@ -2,6 +2,7 @@ import * as React from 'react';
 import { hot } from 'react-hot-loader';
 import { Counter, CounterWithHooks } from './components/counter';
 import { TemperatureConverter } from './components/temperatureConverter';
+import { FlightBooker } from './components/flightBooker';
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
       Hi!
       <Counter />
       <CounterWithHooks />
-        <TemperatureConverter />
+      <TemperatureConverter />
+      <FlightBooker />
     </div>
   );
 }
