@@ -17,7 +17,7 @@ export function Timer(): React.ReactElement {
     <div>
       <h2>Timer</h2>
       Elapsed Time: <progress value={elapsedTime} max={duration}></progress>
-      <label>{elapsedTime.toFixed(0)}</label>
+      <label>{elapsedTime.toFixed(1)}</label>
       <input
         type="range"
         min="0"
@@ -27,7 +27,7 @@ export function Timer(): React.ReactElement {
           setDuration(Number(e.target.value));
         }}
       />
-      <button>Reset</button>
+      <button onClick={()=>setElapsedTime(0)}>Reset</button>
     </div>
   );
 }
