@@ -11,7 +11,7 @@ function TemperatureInput(props: TemperatureInputProps): React.ReactElement {
     <span>
       <input
         type="number"
-        value={props.value}
+        value={props.value || ''}
         step={0.1}
         onChange={e => props.onChange(parseFloat(e.target.value))}
       />
